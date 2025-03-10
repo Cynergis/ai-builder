@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const MyComponent = () => {
+const InputComponent = () => {
   const [value, setValue] = useState('');
 
   const handleChange = (e) => {
@@ -9,12 +9,10 @@ const MyComponent = () => {
 
   return (
     <div>
-      <label>
-        Enter text:
-        <input type="text" value={value} onChange={handleChange} />
-      </label>
+      <label>Enter text:</label>
+      <input type="text" value={value} onChange={handleChange} />
     </div>
   );
 }
 
-export default MyComponent;
+export default InputComponent;
