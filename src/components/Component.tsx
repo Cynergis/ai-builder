@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 
 const MyComponent = () => {
-  const [text, setText] = useState('');
+  const [value, setValue] = useState('');
 
   const handleChange = (e) => {
-    setText(e.target.value);
+    setValue(e.target.value);
   }
 
   return (
     <div>
       <label>Enter some text:</label>
-      <input type="text" value={text} onChange={handleChange} />
+      <input type="text" value={value} onChange={handleChange} />
     </div>
   );
 }
