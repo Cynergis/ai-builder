@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 
 const MyComponent = () => {
-  const [value, setValue] = useState('');
+  const [inputText, setInputText] = useState('');
 
-  const handleChange = (e) => {
-    setValue(e.target.value);
+  const handleInputChange = (e) => {
+    setInputText(e.target.value);
   }
 
   return (
     <div>
-      <label>Enter Text:</label>
-      <input type="text" value={value} onChange={handleChange} />
+      <label>Enter some text:</label>
+      <input type="text" value={inputText} onChange={handleInputChange} />
     </div>
   );
 }
