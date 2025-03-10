@@ -1,18 +1,26 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-const MyComponent = () => {
-  const [inputValue, setInputValue] = useState('');
+const App = () => (
+  <Router>
+    <Switch>
+      <Route path="/about">
+        <About />
+      </Route>
+      <Route path="/users">
+        <Users />
+      </Route>
+      <Route path="/">
+        <Home />
+      </Route>
+    </Switch>
+  </Router>
+);
 
-  const handleInputChange = (event) => {
-    setInputValue(event.target.value);
-  };
+const Home = () => <h2>Home</h2>;
 
-  return (
-    <div>
-      <label>Enter some text:</label>
-      <input type="text" value={inputValue} onChange={handleInputChange} />
-    </div>
-  );
-};
+const About = () => <h2>About</h2>;  
 
-export default MyComponent;
+const Users = () => <h2>Users</h2>;
+
+export default App;
