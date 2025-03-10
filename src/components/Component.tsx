@@ -5,14 +5,16 @@ const MyComponent = () => {
 
   const handleChange = (e) => {
     setValue(e.target.value);
-  };
+  }
 
   return (
     <div>
-      <label>Enter text:</label>
-      <input type="text" value={value} onChange={handleChange} />
+      <label>
+        Enter some text:
+        <input type="text" value={value} onChange={handleChange} />
+      </label>
     </div>
   );
-};
+}
 
 export default MyComponent;
