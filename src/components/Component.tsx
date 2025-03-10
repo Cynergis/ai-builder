@@ -1,12 +1,12 @@
 import React from 'react';
 
-const LabeledInput = () => {
+function TextInputWithLabel() {
   return (
     <div>
-      <label htmlFor="inputId">Label:</label>
-      <input type="text" id="inputId" name="inputName" />
+      <label htmlFor="input">Label:</label>
+      <input id="input" type="text" />
     </div>
   );
-};
+}
 
-export default LabeledInput;
+export default TextInputWithLabel;
