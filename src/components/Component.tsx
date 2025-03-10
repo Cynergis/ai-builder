@@ -1,12 +1,12 @@
 import React from 'react';
 
-const TextInput = () => {
+const LabeledInput = () => {
   return (
     <div>
-      <label htmlFor="inputText">Label:</label>
-      <input type="text" id="inputText" name="inputText" />
+      <label htmlFor="inputId">Your Label</label>
+      <input type="text" id="inputId" />
     </div>
   );
 };
 
-export default TextInput;
+export default LabeledInput;
