@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 
-const HelloInput = () => {
-  const [value, setValue] = useState('');
+const MyComponent = () => {
+  const [inputValue, setInputValue] = useState('');
 
-  const handleChange = (e) => {
-    setValue(e.target.value);
-  }
+  const handleInputChange = (event) => {
+    setInputValue(event.target.value);
+  };
 
   return (
     <div>
-      <label>Hello</label>
-      <input type="text" value={value} onChange={handleChange} />
+      <label>Enter some text:</label>
+      <input type="text" value={inputValue} onChange={handleInputChange} />
     </div>
   );
-}
+};
 
-export default HelloInput;
+export default MyComponent;
