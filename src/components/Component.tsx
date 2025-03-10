@@ -9,7 +9,7 @@ const MyComponent = () => {
 
   return (
     <div>
-      <label>Enter some text:</label>
+      <label>Input Text:</label>
       <input type="text" value={value} onChange={handleChange} />
     </div>
   );
